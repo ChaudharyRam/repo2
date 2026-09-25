@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+/* Main container */
+.container {
+    width: 95%;
+    max-width: 700px;
+    margin: 15px auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1.7fr 0.8fr;
+    grid-template-rows: 55px 1fr 45px;
+
+    gap: 5px;
+
+    border: 2px solid red;
+    padding: 5px;
+
+    min-height: 600px;
+}
+
+/* Header */
+.header {
+    border: 2px solid #9bbce5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    grid-column: 1 / 2;
+}
+
+/* Navigation */
+.nav {
+    border: 2px solid #9bbce5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    grid-column: 2 / 4;
+}
+
+/* Sidebar */
+.sidebar {
+    border: 2px solid #9bbce5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    grid-column: 1 / 2;
+}
+
+/* Main Content */
+.main {
+    border: 2px solid #9bbce5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    grid-column: 2 / 3;
+}
+
+/* Right section */
+.right-section {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+
+    grid-column: 3 / 4;
+}
+
+/* Call to Action */
+.call-action {
+    border: 2px solid #9bbce5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+/* Ads */
+.ads {
+    border: 2px solid #9bbce5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Footer */
+.footer {
+    border: 2px solid #9bbce5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    grid-column: 1 / 4;
+}

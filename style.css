@@ -1,0 +1,496 @@
+/* ================= GENERAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #f2f2f2;
+
+    color: #222;
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100vh;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #111827;
+
+    color: white;
+
+    padding: 20px 40px;
+}
+
+.logo {
+    font-size: 25px;
+
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: red;
+}
+
+
+/* ================= MAIN ================= */
+
+.main-container {
+
+    display: flex;
+
+    flex: 1;
+
+    gap: 20px;
+
+    padding: 20px;
+}
+
+
+/* ================= LEFT SIDEBAR ================= */
+
+.sidebar-left {
+
+    flex: 1;
+
+    background-color: white;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    height: fit-content;
+}
+
+.sidebar-left h3 {
+    margin-bottom: 20px;
+}
+
+.sidebar-left ul {
+    list-style: none;
+}
+
+.sidebar-left li {
+
+    padding: 12px;
+
+    border-bottom: 1px solid #ddd;
+
+    cursor: pointer;
+}
+
+.sidebar-left li:hover {
+
+    background-color: red;
+
+    color:white;
+}
+
+
+/* ================= MAIN CONTENT ================= */
+
+.content-body {
+
+    flex: 3;
+
+    background-color: white;
+
+    padding: 20px;
+
+    border-radius: 10px;
+}
+
+
+/* ================= SHOP TITLE ================= */
+
+.shop-title {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+.shop-title h2 {
+    margin-bottom: 5px;
+}
+
+.shop-title p {
+    color: #666;
+}
+
+.shop-title button {
+
+    background-color: #2563eb;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 18px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+
+/* ================= PRODUCTS ================= */
+
+.product-container {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap:40px;
+}
+
+
+/* ================= PRODUCT CARD ================= */
+
+.product-card {
+
+    flex: 1 1 200px;
+
+    min-width: 200px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+
+    padding: 15px;
+
+    background-color: white;
+
+    transition: 0.3s;
+}
+
+.product-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+/* PRODUCT IMAGE */
+
+.product-card img {
+
+    width: 100%;
+
+    height: 200px;
+
+    object-fit: contain;
+
+    margin-bottom: 15px;
+}
+
+
+.product-card h3 {
+
+    margin-bottom: 8px;
+}
+
+.description {
+
+    color: #666;
+
+    font-size: 14px;
+
+    margin-bottom: 10px;
+}
+
+.product-card h4 {
+
+    color: #2563eb;
+
+    font-size: 18px;
+
+    margin-bottom: 15px;
+}
+
+
+/* BUY BUTTON */
+
+.buy-btn {
+
+    width: 100%;
+
+    background-color: #16a34a;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.buy-btn:hover {
+
+    background-color: #15803d;
+}
+
+
+/* ================= RIGHT SIDEBAR ================= */
+
+.sidebar-right {
+
+    flex: 1;
+
+    background-color: white;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    height: fit-content;
+
+    text-align: center;
+}
+
+.sidebar-right h3 {
+
+    margin-bottom: 15px;
+}
+
+.sidebar-right img {
+
+    width: 100%;
+
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+    margin-bottom: 15px;
+}
+
+.sidebar-right p {
+
+    color: #666;
+
+    margin-bottom: 15px;
+}
+
+
+/* OFFER BUTTON */
+
+.offer-btn {
+
+    background-color: #dc2626;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 25px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background-color: #111827;
+
+    color: white;
+
+    padding: 18px;
+
+    text-align: center;
+}
+
+
+/* ================================================= */
+/*                 MOBILE RESPONSIVE                 */
+/* ================================================= */
+
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+
+    .navbar {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 20px;
+    }
+
+    .nav-links {
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+
+    /* MAIN */
+
+    .main-container {
+
+        flex-direction: column;
+
+        padding: 10px;
+    }
+
+
+    /* SIDEBARS */
+
+    .sidebar-left,
+    .sidebar-right,
+    .content-body {
+
+        width: 100%;
+    }
+
+
+    /* LEFT SIDEBAR */
+
+    .sidebar-left {
+
+        order: 1;
+    }
+
+
+    /* PRODUCTS */
+
+    .content-body {
+
+        order: 2;
+
+        padding: 15px;
+    }
+
+
+    .sidebar-right {
+
+        order: 3;
+    }
+
+
+    /* PRODUCT CARDS */
+
+    .product-container {
+
+        display: flex;
+
+        flex-wrap: wrap;
+
+        gap: 10px;
+    }
+
+    .product-card {
+
+        flex: 1 1 calc(50% - 10px);
+
+        min-width: 140px;
+    }
+
+
+    .product-card img {
+
+        height: 150px;
+    }
+
+
+    /* TITLE */
+
+    .shop-title {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+}
+
+
+/* ================================================= */
+/*             SMALL MOBILE PHONES                  */
+/* ================================================= */
+
+@media (max-width: 480px) {
+
+    .logo {
+
+        font-size: 22px;
+    }
+
+    .nav-links {
+
+        gap: 10px;
+    }
+
+    .nav-links a {
+
+        font-size: 14px;
+    }
+
+
+    /* ONE PRODUCT PER ROW */
+
+    .product-card {
+
+        flex: 1 1 100%;
+    }
+
+
+    .product-card img {
+
+        height: 220px;
+    }
+
+}
