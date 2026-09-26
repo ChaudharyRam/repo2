@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ================= GENERAL ================= */
 
 * {
@@ -494,3 +495,24 @@ body {
     }
 
 }
+=======
+
+                    .container
+                    {
+                        width: 100%;
+                        height: 1000px;
+                        background-color: gray;
+                        position: absolute;
+                    }
+                    h1
+                    {
+                        color: red;
+                        text-align: center;
+                    }
+                    h2
+                    {
+                        color:white;
+                        text-align: center;
+                    }
+    
+>>>>>>> 1ff926902d08440c09cf37537d5667c0220fb8c9
